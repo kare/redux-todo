@@ -15,6 +15,7 @@ TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.shape({
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired,
+    date: PropTypes.instanceOf(Date).isRequired,
   }).isRequired).isRequired,
   onTodoClick: PropTypes.func.isRequired,
 }

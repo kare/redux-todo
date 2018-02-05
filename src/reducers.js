@@ -20,6 +20,7 @@ function todos(state = [], action) {
         {
           text: action.text,
           completed: false,
+          date: action.date,
         },
       ]
     case TOGGLE_TODO:
